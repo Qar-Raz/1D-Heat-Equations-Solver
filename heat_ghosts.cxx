@@ -18,13 +18,19 @@
 
 using std::size_t;
 
+// ... (includes and other code) ...
+
 const size_t ghosts = 1;
-size_t nx = 50000;  // Hardcoded grid size
+// OPTION A: Increase grid size
+size_t nx = 50000;  // Was 50000, now 10x larger
 const double k = 0.4;
-size_t nt = 100;   // Hardcoded number of time steps
+// OPTION B: Increase number of time steps
+size_t nt = 100;   // Was 100, now 100x larger
 const double dt = 1.0;
 const double dx = 1.0;
 size_t threads = 4; // Hardcoded number of threads
+
+// ... (rest of your code) ...
 
 void pr(const std::vector<double>& total) {
   std::cout << "[";
